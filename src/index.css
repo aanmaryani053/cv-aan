@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #1e293b;
+    background-color: #ffffff;
+  }
+
+  ::selection {
+    background-color: #6366f1;
+    color: #ffffff;
+  }
+}
+
+/* Custom organic blob backgrounds inspired by the user reference */
+.blob-organic-1 {
+  border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+}
+
+.blob-organic-2 {
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+}
+
+.blob-organic-hero {
+  border-bottom-left-radius: 48% 65%;
+  border-top-left-radius: 42% 35%;
+}
+
+/* Tabular numbers for accurate metric alignment */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Smooth custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
